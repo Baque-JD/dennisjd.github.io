@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> registro de produccion de ladrillos</title>
+</head>
+<body bgcolor="turquoise">
+<center><style="font-family:verdana;font-size:20px"><h1> Formulario de Produccion de Ladrillos Reciclados</h1></center>
+  <center> 
+  <form action="/procesar_datos" method="POST">
+<label for="fecha"><h2>fecha de produccion:</h2></label>
+<input style="font-size:20px" type="date" id="fecha" name="fecha" required> <br>
+   
+<label for="cantidad"><h2> cantidad de ladrillos. </h2></label>
+<input style="font-size:18px" type"number" id="cantidad" name="cantidad" min="1" required> <br>
+
+<label for="tipo_`lastico"><h2>tipo de plastico:</h2></label>
+<select style="font-size:18px" id="tipo_`lastico" name="tipo_plastico" required>
+   <option value="">saleccione</option>
+   <option value="PET"> PET</option>
+   <option value="HDPE">hdpe</option>
+   <option value="polipropileno">polipropileno</option> </select> <br>
+   
+<label for="peso"><h2>peso del plastico(kg):</h2></label>
+<input style="font-size:18px" type"number" id="peso" name="peso" step="0,1" min="0" required> <br>
+
+<label for="color"><h2>color del ladrillos:</h2></label>
+<input style="font-size:20px" type="text" id="color" name="color"><br>
+
+<label for="responsable"><h2>responsable:</h2></label>
+<input style="font-size:18px" type="text" id="responsable" name="esponsable"required> <br>
+ 
+<label for="costo"><h2>costo aproximado($):</h2></label>
+<input style="font-size:20px" type="number" id="costo" name="costo" step="0.01" min="0"> <br>
+
+<label for="observaciones"><h2>observaciones:</h2> </label>
+<textarea id="observaciones" name="observaciones" rows="4" cols="50"> </textarea> <br>
+     	<br> <button style="font-size:15px" type="submit"><h3>enviar</h3></button>
+		 </form>
+   </center>
+ </body>
+</html>
